@@ -1,4 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
-  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="lab5"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="lab5">
+    <packagedElement xmi:type="uml:Class" xmi:id="_IarFEAdjEd6S_4IkTfjEfA" name="Simulator">
+      <ownedAttribute xmi:id="_lnqjsAdjEd6S_4IkTfjEfA" name="eventQueue" type="_S0uCEAdjEd6S_4IkTfjEfA" aggregation="composite" association="_lntnCgdjEd6S_4IkTfjEfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lnqjsQdjEd6S_4IkTfjEfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lnqjsgdjEd6S_4IkTfjEfA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_m8qAsAdjEd6S_4IkTfjEfA" name="simView" type="_WMX6YAdjEd6S_4IkTfjEfA" aggregation="composite" association="_m8uSKgdjEd6S_4IkTfjEfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m8qAsQdjEd6S_4IkTfjEfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m8qAsgdjEd6S_4IkTfjEfA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_81qUUAdjEd6S_4IkTfjEfA" name="simState" type="_PafW4AdjEd6S_4IkTfjEfA" aggregation="composite" association="_81t-uQdjEd6S_4IkTfjEfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_81qUUQdjEd6S_4IkTfjEfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_81qUUgdjEd6S_4IkTfjEfA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PafW4AdjEd6S_4IkTfjEfA" name="SimState" isAbstract="true">
+      <ownedOperation xmi:id="_heaZ4AdkEd6S_4IkTfjEfA" name="Testar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_S0uCEAdjEd6S_4IkTfjEfA" name="EventQueue"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_WMX6YAdjEd6S_4IkTfjEfA" name="SimView"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lntnCgdjEd6S_4IkTfjEfA" name="A_&lt;simulator>_&lt;eventQueue>" memberEnd="_lntnCwdjEd6S_4IkTfjEfA _lnqjsAdjEd6S_4IkTfjEfA">
+      <ownedEnd xmi:id="_lntnCwdjEd6S_4IkTfjEfA" name="simulator" type="_IarFEAdjEd6S_4IkTfjEfA" association="_lntnCgdjEd6S_4IkTfjEfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lntnDAdjEd6S_4IkTfjEfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lntnDQdjEd6S_4IkTfjEfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m8uSKgdjEd6S_4IkTfjEfA" name="A_&lt;simulator>_&lt;simView>" memberEnd="_m8uSKwdjEd6S_4IkTfjEfA _m8qAsAdjEd6S_4IkTfjEfA">
+      <ownedEnd xmi:id="_m8uSKwdjEd6S_4IkTfjEfA" name="simulator" type="_IarFEAdjEd6S_4IkTfjEfA" association="_m8uSKgdjEd6S_4IkTfjEfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m8u5MAdjEd6S_4IkTfjEfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m8u5MQdjEd6S_4IkTfjEfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_81t-uQdjEd6S_4IkTfjEfA" name="A_&lt;simulator>_&lt;simState>" memberEnd="_81vz4AdjEd6S_4IkTfjEfA _81qUUAdjEd6S_4IkTfjEfA">
+      <ownedEnd xmi:id="_81vz4AdjEd6S_4IkTfjEfA" name="simulator" type="_IarFEAdjEd6S_4IkTfjEfA" association="_81t-uQdjEd6S_4IkTfjEfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_81vz4QdjEd6S_4IkTfjEfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_81vz4gdjEd6S_4IkTfjEfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
 </uml:Model>
