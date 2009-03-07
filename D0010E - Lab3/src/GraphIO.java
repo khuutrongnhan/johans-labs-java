@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 /** IO handling for the Graph class
- * @author Johan Ström
+ * @author Johan Strom
  */
 public class GraphIO {
 
@@ -37,7 +37,7 @@ public class GraphIO {
 			sc.close();
 		}
 		catch(IOException IOex){
-			throw new IOException(IOex);
+			throw new IOException();
 		}
 
 	}
